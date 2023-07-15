@@ -4,6 +4,7 @@
     --accent-color: #2196F3;
     --main-color: #212121;
     --secondary-accent-color: #757575; 
+    --light-color: #ffffff;
 
     --main-padding: 94px
 }
@@ -222,7 +223,7 @@ color: var(--secondary-accent-color);
 }
 
 .hero-title{
-    color: #FFFFFF;
+    color: var(--light-color);
     font-weight: 900;
     font-size: 44px;
     text-transform: uppercase; 
@@ -239,7 +240,7 @@ color: var(--secondary-accent-color);
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--light-color);
     background-color: var(--accent-color);
     letter-spacing: 0.96px;
 
@@ -337,6 +338,11 @@ gap: 30px;
     padding: 0;
 }
 
+.masters-item{
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
 .masters-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -401,7 +407,7 @@ margin-bottom: 50px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: var(--light-color);
 }
 
 .social-list-icon{
@@ -412,14 +418,14 @@ margin-bottom: 50px;
 
 .social-list-item:hover .social-list-icon,
 .social-list-item:focus .social-list-icon{
-    fill: #FFFFFF;
+    fill: var(--light-color);
 }
 
 /* end masters */
 
 /* start clients */
 .section-clients{
-    background: #FFF;
+    background: var(--light-color);
 }
 
 .clients-title{
@@ -446,6 +452,16 @@ margin-bottom: 50px;
     margin-right: 30px;
 }
 
+.clients-list-item:hover,
+.clients-list-item:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.clients-list-item:hover .clients-list-icon,
+.clients-list-item:focus .clients-list-icon{
+    fill: var(--accent-color);
+}
+
 .clients-container{
     padding: 6px 32px;
 }
@@ -459,6 +475,17 @@ margin-bottom: 50px;
 /* end clients */
 
 /* start footer */
+.footer-container{
+    display: flex; 
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-nav{
+    margin-right: 70px;
+}
+
 .footer{
     background-color:#2F303A ;
     padding-top: 60px;
@@ -466,24 +493,16 @@ margin-bottom: 50px;
 }
 
 .logo-footer{
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto; 
     margin-bottom: 20px;
 }
 
-.footer-content{
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .logo-footer-item{
     margin-bottom: 20px;
 }
 
 .footer .logo-second-part{
-    color: #FFFFFF;
+    color: var(--light-color);
 }
 
 .contact-footer-list:not(:last-child){
@@ -496,7 +515,7 @@ margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--light-color);
 }
 
 .contact-footer-email,
@@ -509,8 +528,9 @@ margin-bottom: 50px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contentainer{
+.footer-social-container{
     display: flex;
+    flex-direction: column;
 }
 
 .footer-social-description{
@@ -519,11 +539,38 @@ font-weight: 700;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 
-color: #FFFFFF;
-
-padding-top: 72px;
-margin-left: 156px;
+color: var(--light-color);
 margin-bottom: 20px;
+}
+
+.footer-social{
+    display: flex; 
+}
+
+.footer-social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+}
+
+.footer-social-list:not(:last-child){
+   margin-right: 10px;
+}
+
+
+.footer-social-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--light-color);
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus{
+    background-color: var(--accent-color);
 }
 
 /* end footer */
@@ -563,12 +610,12 @@ margin-bottom: 20px;
 .filter-btn-item:hover,
 .filter-btn-item:focus{
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--light-color);
 }
 
 .filter-btn .current{
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--light-color);
 }
 
 .portfolio-gallery{
@@ -583,6 +630,7 @@ margin-bottom: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #EEE;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .potfolio-img-list{
@@ -608,4 +656,7 @@ margin-bottom: 20px;
     color: var(--secondary-accent-color);
 }
 
+.portfolio-gallery-content{
+    padding: 20px 24px;
+}
 /* end portfolio */
