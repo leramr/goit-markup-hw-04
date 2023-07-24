@@ -305,7 +305,7 @@ padding: 25px 100px;
 
 /* start gallery */
 
-.gallery.container{
+.section-gallery{
     padding-bottom: 94px;
 }
 
@@ -498,6 +498,7 @@ margin-bottom: 50px;
 
 
 .logo-footer-item{
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -629,8 +630,14 @@ margin-bottom: 20px;
     flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEE;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-gallery-content{
+    border-bottom: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+    padding: 20px 24px;
 }
 
 .potfolio-img-list{
