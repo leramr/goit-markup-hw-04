@@ -64,7 +64,6 @@ padding-bottom: var(--main-padding);
 .header-container{
     display: flex;
     align-items: center;
-    
 }
 
 .site-nav{
@@ -133,6 +132,9 @@ padding-bottom: var(--main-padding);
 }
 
 .contact-list-item{
+    /* display: flex; */
+    justify-content: baseline;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -152,6 +154,9 @@ padding-bottom: var(--main-padding);
 
 .contact-email,
 .contact-number{
+    /* display: block; */
+    justify-content: baseline;
+
 font-weight: 500; 
 font-size: 14px;
 line-height: 1.14;
@@ -283,8 +288,6 @@ margin-bottom: 30px;
 
 .about-box-icon{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
 
     width: 70px;
     height: 70px;
@@ -457,7 +460,12 @@ margin-bottom: 50px;
 
 .clients-list-link{
     width: 170px;
-    padding: 16px 32px;
+    height: 92px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 4px;
     border: 1px solid #AFB1B8;
 }
@@ -489,7 +497,8 @@ margin-bottom: 50px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .footer-nav{
